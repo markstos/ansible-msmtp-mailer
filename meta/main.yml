@@ -20,6 +20,9 @@ galaxy_info:
   - name: Alpine
     versions:
     - any
+  - name: RedHat
+    versions:
+    - any
   tags:
   - mail
   - system

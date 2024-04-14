@@ -2,7 +2,8 @@
 
 # ansible-msmtp-mailer
 
-This ansible role deploys msmtp as a mailer for Debian, Ubuntu, Arch & Alpine Linux
+This Ansible role deploys msmtp as a mailer for Debian, Ubuntu, Arch, Alpine and
+the Red Hat family of Linux distributions
 
 ## Prerequisite
 

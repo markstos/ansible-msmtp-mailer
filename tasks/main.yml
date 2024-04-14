@@ -13,6 +13,16 @@
   tags: mail
   when: ansible_os_family == "Debian"
 
+- name: Update cache and install msmtp and mailx on RedHat-based distros
+  loop:
+    - msmtp
+    - mailx
+  ansible.builtin.dnf:
+    name: "{{ item }}"
+    update_cache: true
+  tags: mail
+  when: ansible_os_family == "RedHat"
+
 - name: Remove other MTAs.
   apt:
     name: "{{ packages }}"
